@@ -62,6 +62,12 @@
   </head>
 
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <ul
+        v-for="email in emails"
+        v-show="emails.length >= 10">
+        <li>{{email}}</li>
+      </ul>
+    </div>
   </body>
 </html>
